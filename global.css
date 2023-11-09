@@ -1,0 +1,127 @@
+/*
+  Référence des fonts :
+  - Chakra Petch (Pour titres)
+  - Titillium Web (Pour texte)
+  - JetBrains Mono (Code)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=JetBrains+Mono&family=Titillium+Web&display=swap');
+
+/* 
+  Paramètre les couleurs du site en fonction des préférences de l'utilisateur.
+*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #000000;
+    --background: #f6ebe9;
+    --primary: #73bcc4;
+    --secondary: #bfcccf;
+    --accent: #41929b;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ffffff;
+    --background: #160b09;
+    --primary: #3b848c;
+    --secondary: #303d40;
+    --accent: #64b5be;
+  }
+}
+
+/* Style pour les liens (Inversion de couleurs) */
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--background);
+  background-color: var(--text);
+}
+
+/* Base du document */
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Barre de navigation */
+nav {
+  padding: 10px 0;
+
+  border: 2px solid var(--text);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+.nav-content {
+  margin: 20px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-content > * {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-links > * {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-content {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+  .nav-content > * {
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2.75em;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 2.25em;
+  margin: 20px 0;
+}
+
+h5 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+h6 {
+  font-size: 1.75em;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 125%;
+}
+
+/* Classes utilitaires */
+
+/* Rendre un élément non-sélectionnble */
+.unselectable {
+  user-select: none;
+}
