@@ -2,130 +2,120 @@
   Référence des fonts :
   - Chakra Petch (Pour titres)
   - Titillium Web (Pour texte)
-  - JetBrains Mono (Code)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=JetBrains+Mono&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Titillium+Web&display=swap');
 
 /* 
   Paramètre les couleurs du site en fonction des préférences de l'utilisateur.
 */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
-    --text: #000000;
+    --text: #160b09;
     --background: #f6ebe9;
-    --primary: #73bcc4;
-    --secondary: #bfcccf;
-    --accent: #41929b;
   }
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #ffffff;
+    --text: #f6ebe9;
     --background: #160b09;
-    --primary: #3b848c;
-    --secondary: #303d40;
-    --accent: #64b5be;
   }
+} */
+
+/* Style global pour textes */
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  font-family: 'Titillium Web';
 }
 
 /* Style pour les liens (Inversion de couleurs) */
 a {
-  color: var(--text);
+  color: black;
   text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
 }
 a:hover {
-  color: var(--background);
-  background-color: var(--text);
+  color: white;
+  background-color: black;
 }
 
 /* Base du document */
 body {
-  background-color: var(--background);
-  color: var(--text);
+  background-color: black;
+  color: white;
 }
 
 /* Barre de navigation */
 nav {
-  padding: 10px 0;
+  background-color: white;
+  color: black;
+  height: 60px;
 
-  border: 2px solid var(--text);
+  display: flex;
+  justify-content: space-around;
+
+  border: 2px solid white;
   border-top: none;
   border-left: none;
   border-right: none;
-
-  font-family: 'JetBrains Mono', sans-serif;
 }
 
-.nav-content {
-  margin: 20px 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+nav > * {
+  margin: auto 0;
 }
 
-.nav-content > * {
+.nav-links {
+  color: var(--background);
   display: flex;
-  justify-content: space-evenly;
 }
 .nav-links > * {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 800px) {
-  .nav-content {
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
-  }
-  .nav-content > * {
-    margin: 2px 0;
-
-  }
-  .nav-content * {
-    justify-content: center;
-    font-size: 18px;
-  }
-}
-
 h1 {
   font-size: 3em;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 h2 {
   font-size: 2.75em;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 h3 {
   font-size: 2.5em;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 h4 {
   font-size: 2.25em;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 h5 {
   font-size: 2em;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 h6 {
   font-size: 1.75em;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 p {
   font-size: 1.5em;
-  line-height: 125%;
+  line-height: 115%;
 }
 
 /* Classes utilitaires */
+.blink {
+  animation: blink 1.2s steps(1, end) infinite;
+}
 
-/* Rendre un élément non-sélectionnble */
-.unselectable {
-  user-select: none;
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
