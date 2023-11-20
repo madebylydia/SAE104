@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Titillium+Web&display=swap');
 
+
 /* 
   Paramètre les couleurs du site en fonction des préférences de l'utilisateur.
 */
@@ -48,15 +49,10 @@ body {
 nav {
   background-color: white;
   color: black;
-  height: 60px;
+  padding: 20px 0;
 
   display: flex;
   justify-content: space-around;
-
-  border: 2px solid white;
-  border-top: none;
-  border-left: none;
-  border-right: none;
 }
 
 nav > * {
@@ -71,34 +67,37 @@ nav > * {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+  }
+  nav > * {
+    align-self: center;
+  }
+}
+
 h1 {
   font-size: 3em;
-  padding: 20px 0;
 }
 
 h2 {
   font-size: 2.75em;
-  padding: 20px 0;
 }
 
 h3 {
   font-size: 2.5em;
-  padding: 20px 0;
 }
 
 h4 {
   font-size: 2.25em;
-  padding: 20px 0;
 }
 
 h5 {
   font-size: 2em;
-  padding: 20px 0;
 }
 
 h6 {
   font-size: 1.75em;
-  padding: 20px 0;
 }
 
 p {

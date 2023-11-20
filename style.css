@@ -1,8 +1,7 @@
 #helloWorldVideo {
   position: fixed;
-  right: 0;
-  bottom: 0;
   z-index: -1;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
 }
@@ -27,4 +26,36 @@
 }
 .infos > * {
   text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  justify-content: center;
+
+  padding: 10px;
+  color: black;
+}
+
+.info > h2 {
+  margin: 10px 0;
+}
+
+.info > .material-symbols-outlined {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1000px) {
+  #helloWorldVideo {
+    right: -30%;
+  }
+
+  .infos {
+    flex-direction: column;
+  }
+
+  .info {
+    margin: 20px 0;
+  }
 }
