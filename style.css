@@ -7,6 +7,7 @@
 }
 
 .presentation {
+  position: relative;
   background-color: rgba(100, 100, 100, 0.2);
   display: flex;
   flex-direction: column;
@@ -15,14 +16,25 @@
   height: 75vh;
 }
 
+#telHint {
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+}
+
+.clean-space {
+  padding: 80px;
+}
+
 .infos {
   background-color: white;
   color: black;
-  padding: 80px 0;
 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
 }
 .infos > * {
   text-align: center;
@@ -34,7 +46,7 @@
   flex: 1 1 0;
   justify-content: center;
 
-  padding: 10px;
+  margin: 10px;
   color: black;
 }
 
@@ -42,20 +54,117 @@
   margin: 10px 0;
 }
 
-.info > .material-symbols-outlined {
+.info > i {
+  font-size: 2.5em;
+}
+
+.technologies {
+  background-color: black;
+}
+
+.technologies a {
+  color: white;
+}
+
+.technologies a:hover {
+  color: black;
+  background-color: white;
+}
+
+.tech > i {
+  display: flex;
+  justify-content: center;
+  /* width: 50%; */
   font-size: 3em;
+}
+
+.tech-list {
+  margin: 40px 0;
+  display: flex;
+}
+
+.tech {
+  flex-basis: 100%;
+  padding: 0 20px;
+}
+.tech > h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.ideology {
+  color: black;
+  background-color: white;
+}
+.ideology * {
+  margin: 20px 0;
+}
+
+.image-container-with-text {
+  margin: 0 auto;
+  width: 25vw;
+}
+.image-container-with-text * {
+  margin: 0;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.empty > p {
+  font-style: italic;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: unset;
 }
 
 @media screen and (max-width: 1000px) {
   #helloWorldVideo {
-    right: -30%;
+    right: -35%;
+  }
+
+  #telHint {
+    visibility: hidden;
+  }
+
+  .clean-space {
+    padding: 20px;
   }
 
   .infos {
     flex-direction: column;
+    padding: 20px;
   }
 
   .info {
-    margin: 20px 0;
+    margin: 40px 10px;
+  }
+
+  .tech-list {
+    flex-direction: column;
+  }
+
+  .tech {
+    margin: 20px 10px;
+  }
+
+  .image-container-with-text {
+    margin: 0 auto;
+    width: 75vw;
   }
 }
