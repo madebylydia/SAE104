@@ -8,7 +8,7 @@
 
 .presentation {
   position: relative;
-  background-color: rgba(100, 100, 100, 0.2);
+  background-color: rgba(70, 70, 70, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,9 +28,6 @@
 }
 
 .infos {
-  background-color: white;
-  color: black;
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -47,7 +44,6 @@
   justify-content: center;
 
   margin: 10px;
-  color: black;
 }
 
 .info > h2 {
@@ -56,19 +52,6 @@
 
 .info > i {
   font-size: 2.5em;
-}
-
-.technologies {
-  background-color: black;
-}
-
-.technologies a {
-  color: white;
-}
-
-.technologies a:hover {
-  color: black;
-  background-color: white;
 }
 
 .tech > i {
@@ -92,10 +75,6 @@
   margin: 10px;
 }
 
-.ideology {
-  color: black;
-  background-color: white;
-}
 .ideology * {
   margin: 20px 0;
 }
@@ -116,21 +95,6 @@
 }
 .empty > p {
   font-style: italic;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background-color: black;
-}
-
-footer a {
-  color: white;
-}
-footer a:hover {
-  text-decoration: underline;
-  color: white;
-  background-color: unset;
 }
 
 @media screen and (max-width: 1000px) {

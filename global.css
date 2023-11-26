@@ -23,6 +23,11 @@
   }
 } */
 
+:root {
+  --text: #f6ebe9;
+  --background: #000000;
+}
+
 /* Style global pour textes */
 .content {
   font-family: 'Titillium Web';
@@ -111,7 +116,47 @@ p {
   line-height: 115%;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: unset;
+}
+
 /* Classes utilitaires */
+
+.black {
+  color: var(--text);
+  background-color: var(--background);
+}
+.black a {
+  color: var(--text);
+}
+.black a:hover {
+  color: var(--background);
+  background-color: var(--text);
+}
+
+.white {
+  color: var(--background);
+  background-color: var(--text);
+}
+.white a {
+  color: var(--background);
+}
+.white a:hover {
+  color: var(--text);
+  background-color: var(--background);
+}
+
+
 .blink {
   animation: blink 1.2s steps(1, end) infinite;
 }
