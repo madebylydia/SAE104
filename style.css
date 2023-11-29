@@ -24,7 +24,7 @@
 }
 
 .clean-space {
-  padding: 80px;
+  padding: 60px;
 }
 
 .infos {
@@ -62,7 +62,6 @@
 }
 
 .tech-list {
-  margin: 40px 0;
   display: flex;
 }
 

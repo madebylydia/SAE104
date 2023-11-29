@@ -1,0 +1,12 @@
+.project {
+  padding: 20px 200px;
+}
+.project > * {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    padding: 40px 50px;
+  }  
+}
