@@ -10,22 +10,9 @@
 /* 
   Paramètre les couleurs du site en fonction des préférences de l'utilisateur.
 */
-/* @media (prefers-color-scheme: light) {
-  :root {
-    --text: #160b09;
-    --background: #f6ebe9;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #f6ebe9;
-    --background: #160b09;
-  }
-} */
-
 :root {
-  --text: #f6ebe9;
-  --background: #000000;
+  --text: #dddbda;
+  --background: #211e35;
 }
 
 /* Style global pour textes */

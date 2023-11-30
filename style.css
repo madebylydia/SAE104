@@ -86,6 +86,32 @@
   margin: 0;
 }
 
+.careers {
+  padding: 40px;
+}
+.career-part {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #352f59;
+
+  border-left: 10px solid white;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.career-part h3 {
+  flex: 1 1 0;
+  margin: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+.career-part p {
+  flex: 2 2 0;
+}
+
 .empty {
   display: flex;
   justify-content: center;
@@ -129,5 +155,9 @@
   .image-container-with-text {
     margin: 0 auto;
     width: 75vw;
+  }
+
+  .career-part {
+    flex-direction: column;
   }
 }
