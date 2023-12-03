@@ -32,13 +32,13 @@
     </nav>
 
     <div class="fabricius-logo black">
-      <img src="/assets/logo_fabricius_white.png" alt="Fabricius logo">
+      <img src="/assets/logo_fabricius_white.png" alt="Fabricius logo" />
     </div>
 
     <div class="content white">
       <!-- Ajouter un texte permettant de se rendre sur la page précédente -->
-      <p class="teleport" >
-        <img src="/assets/flag_fr.png" alt="">
+      <p class="teleport">
+        <img src="/assets/flag_fr.png" alt="" />
         <a href="/project">Go to the French version</a>
       </p>
 
@@ -48,30 +48,33 @@
         <p>
           During my high school years, I discovered the communication platform
           called <b>Discord</b>, surely an useful app, where everyone can create
-          their very own profiles, chat with others, join a community, and do great
-          things!
+          their very own profiles, chat with others, join a community, and do
+          great things!
         </p>
         <p>
-          Inside these communities, it isn't rare to see they are helped by bots.
-          Automated account that do actions for you, like managing members, sending
-          fun message, creating events, it's... rich!
+          Inside these communities, it isn't rare to see they are helped by
+          bots. Automated account that do actions for you, like managing
+          members, sending fun message, creating events, it's... rich!
         </p>
         <p>
-          One of these community I've joined myself is <b>Red-DiscordBot</b> (Simply
-          called as "Red"), a community with one goal : Create a robust open-source bot
-          that everyone can extend with a system of modules (Called Cogs). Each person
-          that host their own instance of Red can extend it to their own liking, with
-          what they want in their bot. The only limit being the person that host his Red,
-          or Discord.
+          One of these community I've joined myself is
+          <b>Red-DiscordBot</b> (Simply called as "Red"), a community with one
+          goal : Create a robust open-source bot that everyone can extend with a
+          system of modules (Called Cogs). Each person that host their own
+          instance of Red can extend it to their own liking, with what they want
+          in their bot. The only limit being the person that host his Red, or
+          Discord.
         </p>
         <p>
-          As such, a great community of developers started gathering around Red, and
-          create many awesome modules for Red, from the smallest to the most ambitious
-          ones. If you ever dreamed to catch Pokemons on Discord, you can do that with
-          you own Red bot!
+          As such, a great community of developers started gathering around Red,
+          and create many awesome modules for Red, from the smallest to the most
+          ambitious ones. If you ever dreamed to catch Pokemons on Discord, you
+          can do that with you own Red bot!
         </p>
         <p>
-          However, when a developer has a brand new idea for a module, he would finds himself having to redo the first manipulations, creating 3 files, which consists of this base:
+          However, when a developer has a brand new idea for a module, he would
+          finds himself having to redo the first manipulations, creating 3
+          files, which consists of this base:
         </p>
         <ul>
           <li>
@@ -79,30 +82,39 @@
           </li>
           <li>
             <p>
-              A <samp>info.json</samp> with information about the module and 
-              its author.
+              A <samp>info.json</samp> with information about the module and its
+              author.
             </p>
           </li>
           <li>
             <p>
-              A file (with whatever name you like, doesn't matter) that defines what the module do, but follows a few rules (create a class, give basic information, a command, etc.).
+              A file (with whatever name you like, doesn't matter) that defines
+              what the module do, but follows a few rules (create a class, give
+              basic information, a command, etc.).
             </p>
           </li>
         </ul>
         <p>
-          So I, who also wanted to develop my modules, didn't particularly like creating this base manually every time: I wanted to automate this task, and so <b>the Fabricius project began!</b> A project template rendering tool !
+          So I, who also wanted to develop my modules, didn't particularly like
+          creating this base manually every time: I wanted to automate this
+          task, and so <b>the Fabricius project began!</b> A project template
+          rendering tool !
         </p>
         <h2>'scuse me? Project templating?</h2>
         <p>
-          A project templating engine boils down to a simple thing: Create from the basis of a project,
-          a brand new, working project from information supplied by the user.
+          A project templating engine boils down to a simple thing: Create from
+          the basis of a project, a brand new, working project from information
+          supplied by the user.
         </p>
         <p>
-          Basically, you create a layout, retrieve information, populate with user's information, and create a new project! All that's left is to do what you want with your working project!
+          Basically, you create a layout, retrieve information, populate with
+          user's information, and create a new project! All that's left is to do
+          what you want with your working project!
         </p>
         <h6><i>What about existing tools?</i></h6>
         <p>
-          Red was coded in Python, so developers were used to Python tools such as black, isort, mypy, etc. It was logical to create a Python tool.
+          Red was coded in Python, so developers were used to Python tools such
+          as black, isort, mypy, etc. It was logical to create a Python tool.
         </p>
         <p>
           Regarding templating engines renderer, it boils down to two tools:
@@ -112,63 +124,69 @@
           <li><p>Copier</p></li>
         </ul>
         <p>
-          CookieCutter is definitively the most popular, with its
-          20,000 stars on GitHub, however, there's a few problem with
-          this one:
+          CookieCutter is definitively the most popular, with its 20,000 stars
+          on GitHub, however, there's a few problem with this one:
         </p>
         <ul>
           <li><p>It's poorly maintained.</p></li>
           <li>
             <p>
-              Doesn't allow for validation/modification of user's input (which, yes, can be extremely useful).
+              Doesn't allow for validation/modification of user's input (which,
+              yes, can be extremely useful).
             </p>
           </li>
           <li><p>It's not customizable.</p></li>
           <li><p>It crashes a lot and doesn't feel trustable enough.</p></li>
           <li>
-            <p>
-              It forces you to follow a certain pattern for your layout.
-            </p>
+            <p>It forces you to follow a certain pattern for your layout.</p>
           </li>
         </ul>
         <p>
-          Even if I tried this tool, I couldn't use it because...
-          Well it just doesn't work at all!
+          Even if I tried this tool, I couldn't use it because... Well it just
+          doesn't work at all!
         </p>
         <p>
-          and then comes Copier, however, that one looks incredible by itself: It's maintained, feels robust, and is dang customizable!
+          and then comes Copier, however, that one looks incredible by itself:
+          It's maintained, feels robust, and is dang customizable!
         </p>
         <p>
-          The reason why I didn't use this tool instead, is because I wanted to test myself and create a new challenge: I wanted a new tool, one that was like CookieCutter, but even better, a universal tool that would even render CookieCutter projects!
+          The reason why I didn't use this tool instead, is because I wanted to
+          test myself and create a new challenge: I wanted a new tool, one that
+          was like CookieCutter, but even better, a universal tool that would
+          even render CookieCutter projects!
         </p>
         <p>
-          But why, you might ask? Because everyone, who once used CookieCutter, might not want to change for a new tool, they would prefer using the same they use because they've already been using it! HOWEVER, if you've provide the same fonctionnalites with a better tool, there is a much better chance you interest peoples!
+          But why, you might ask? Because everyone, who once used CookieCutter,
+          might not want to change for a new tool, they would prefer using the
+          same they use because they've already been using it! HOWEVER, if
+          you've provide the same fonctionnalites with a better tool, there is a
+          much better chance you interest peoples!
         </p>
         <p>
           I also wanted to take inspiration from the
           <a
             href="https://docs.adonisjs.com/guides/ace-commandline#templates-generator"
             >AdonisJS's template generator</a
-          >, which, to me, looked just awesome and showed my vision for Fabricius!
-          I wasn't just creating a simple tool, but an extendable tool! The Jack of all trade!
+          >, which, to me, looked just awesome and showed my vision for
+          Fabricius! I wasn't just creating a simple tool, but an extendable
+          tool! The Jack of all trade!
         </p>
         <p>
-          For the development of Fabricius, I decided to put myself a few constraints
-          to respect, but also complex, for the better:
+          For the development of Fabricius, I decided to put myself a few
+          constraints to respect, but also complex, for the better:
         </p>
         <ul>
           <li><p>To be a 100% working and tested tool.</p></li>
           <li><p>Extendable with plugins.</p></li>
           <li>
             <p>
-              Must respect user's security (Unallow malicious scripts or unauthorized execution).
+              Must respect user's security (Unallow malicious scripts or
+              unauthorized execution).
             </p>
           </li>
           <li><p>Must be fully typed.</p></li>
           <li>
-            <p>
-              Must be future-proof: Easy to add code, modify it, etc.
-            </p>
+            <p>Must be future-proof: Easy to add code, modify it, etc.</p>
           </li>
           <li>
             <p>
@@ -178,13 +196,21 @@
         </ul>
         <h2>Technical information</h2>
         <p>
-          Fabricius started in July 2022, at this point, the last minor version of Python was the <samp>3.10</samp>, but a few months later, the <samp>3.11</samp> version would come up, adding a few nice things I was interested into, and most importantly, new typing tools for the langage's typing system.
+          Fabricius started in July 2022, at this point, the last minor version
+          of Python was the <samp>3.10</samp>, but a few months later, the
+          <samp>3.11</samp> version would come up, adding a few nice things I
+          was interested into, and most importantly, new typing tools for the
+          langage's typing system.
         </p>
         <p>
-          As of today, Fabricius is being worked on with the <samp>3.12.0</samp> Python version, a version that introduce a new syntax for generic classes.
+          As of today, Fabricius is being worked on with the
+          <samp>3.12.0</samp> Python version, a version that introduce a new
+          syntax for generic classes.
         </p>
         <p>
-          Fabricius is still a work in progress, most of the time is put into how the project should look like, how it must feel like, what's its philosophy, what I should respect, etc..
+          Fabricius is still a work in progress, most of the time is put into
+          how the project should look like, how it must feel like, what's its
+          philosophy, what I should respect, etc..
         </p>
         <p>
           It's really important to think about this as soon as possible, as
@@ -201,13 +227,14 @@
           </li>
           <li>
             <p>
-              Create classes to represent objects : Files to create, projet to build, etc.
+              Create classes to represent objects : Files to create, projet to
+              build, etc.
             </p>
           </li>
           <li>
             <p>
-              Render template with the user's given information
-              (Made with <samp>jinja</samp>, <samp>chevron</samp>,
+              Render template with the user's given information (Made with
+              <samp>jinja</samp>, <samp>chevron</samp>,
               <samp>str.format</samp> and <samp>string.Template</samp>).
             </p>
           </li>
@@ -227,48 +254,52 @@
           </li>
           <li>
             <p>
-              Be able to register user's settings in a persistent file
-              (Made with <samp>platformdirs</samp> and
-              <samp>pydantic</samp>).
+              Be able to register user's settings in a persistent file (Made
+              with <samp>platformdirs</samp> and <samp>pydantic</samp>).
             </p>
           </li>
         </ul>
         <p>
-          To make all of this in one package, that's a LOT of work! Most especially when you try to respect a structure that itself, hold a certain philosophy.
+          To make all of this in one package, that's a LOT of work! Most
+          especially when you try to respect a structure that itself, hold a
+          certain philosophy.
         </p>
         <h2>My resources</h2>
         <p>
-          …but as always, in development, we're never alone !
-          With such big project, I have the luck to have learned about
-          useful resources and awesome peoples that would help me out:
+          …but as always, in development, we're never alone ! With such big
+          project, I have the luck to have learned about useful resources and
+          awesome peoples that would help me out:
         </p>
         <h3>Refactoring Guru</h3>
         <p>
-          This website is just AWESOME, to anyone who wants to learn how to refactor their code, on how a program can behave, be structured or be created.
-          Be sure to find this website very helpful whenever you try to create a new project and would like to make things as clean as possible.
+          This website is just AWESOME, to anyone who wants to learn how to
+          refactor their code, on how a program can behave, be structured or be
+          created. Be sure to find this website very helpful whenever you try to
+          create a new project and would like to make things as clean as
+          possible.
         </p>
         <p>
-          Thanks to this website, I was able to understand and learn about
-          new patterns in programmation, on top of the one I was already
-          using myself, but blindly.
+          Thanks to this website, I was able to understand and learn about new
+          patterns in programmation, on top of the one I was already using
+          myself, but blindly.
         </p>
         <p><a href="https://refactoring.guru/">https://refactoring.guru/</a></p>
         <h3>Fluent Python, by Luciano Ramalho</h3>
         <p>
           Luciano Ramalho is a member of the PSF (Python Software Foundation),
-          so he's definitively one of the best person to tell you about the
-          most specific stuff in Python, and that's what his book does.
-          Fluent Python is the resource that helped me understand the design
-          behind Python and how to take full advantages of its potential, like
-          magic functions!
+          so he's definitively one of the best person to tell you about the most
+          specific stuff in Python, and that's what his book does. Fluent Python
+          is the resource that helped me understand the design behind Python and
+          how to take full advantages of its potential, like magic functions!
         </p>
         <h3>Red-DiscordBot</h3>
         <p>
-          The community I owe everything.<br />Thanks to this community,
-          drived by friends from all over the world, they helped me and pushed me to program, and be who I am today, but also who I want to be for the foreseeable future.
-          Red has so many wonderful peoples, so awesome that they helped
-          me achieve things I thought I would never be able to tackle
-          down myself.
+          The community I owe everything.<br />Thanks to this community, drived
+          by friends from all over the world, they helped me and pushed me to
+          program, and be who I am today, but also who I want to be for the
+          foreseeable future. Red has so many wonderful peoples, so awesome that
+          they helped me achieve things I thought I would never be able to
+          tackle down myself.
         </p>
         <p>
           I especially thank
@@ -288,13 +319,17 @@
             href="https://github.com/Cog-Creators/Red-DiscordBot/graphs/contributors"
             >everyone else from the community</a
           >
-          for being the nicest community, and the most knowledgable community I've ever met.
+          for being the nicest community, and the most knowledgable community
+          I've ever met.
         </p>
         <p><a href="https://discord.gg/Red">https://discord.gg/red</a></p>
 
         <p>Well... That's a great explanation of my project...</p>
         <p>I hope you liked my writing, hey, I like writing! So it was fun!</p>
-        <p>I'll make Fabricius, promise, this tool will exist at some point. When? Idk :)</p>
+        <p>
+          I'll make Fabricius, promise, this tool will exist at some point.
+          When? Idk :)
+        </p>
       </article>
 
       <footer class="black">
